@@ -1,0 +1,230 @@
+/* || Header */
+.header {
+  background: url("../images/bg-header-mobile.png") no-repeat center top;
+  text-align: center;
+
+  &__logo {
+    padding: 7.625rem 0 4.5625rem 0;
+    & > img {
+      max-width: 8.125rem;
+    }
+  }
+  &__content {
+    text-align: center;
+    margin-bottom: 10.25rem;
+  }
+
+  /*  Media query to change the background image*/
+  @media only screen and (min-width: 23.44em) {
+    background: url("../images/bg-header-desktop.png") no-repeat center top;
+  }
+
+  @media only screen and (min-width: 40.625em) {
+    &__content {
+      max-width: 35rem;
+      margin: 0 auto 10.25rem auto;
+    }
+  }
+}
+
+/* || Features  */
+.features {
+  margin-bottom: 9.5625rem;
+  &__image {
+    margin-bottom: 3.75rem;
+    & > img {
+      max-width: 100%;
+      max-height: 35.75rem;
+    }
+  }
+
+  @media only screen and (min-width: 40.625em) {
+    display: flex;
+    align-items: center;
+    &__image {
+      flex: 1;
+      position: relative;
+      right: 6rem;
+    }
+    &__content {
+      flex: 1;
+    }
+  }
+}
+/* || Clipboard  */
+.clipboard {
+  margin-bottom: 6rem;
+
+  &__image {
+    text-align: center;
+    & > img {
+      max-width: 100%;
+    }
+  }
+}
+
+/* || Supercharge  */
+.supercharge {
+  margin-bottom: 4.4375rem;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  @media only screen and (min-width: 56.25em) {
+    &__content {
+      flex-direction: row;
+      align-items: unset;
+    }
+  }
+}
+
+/* ||brands */
+.brands {
+  margin-bottom: 10.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__logo {
+    margin-bottom: 4rem;
+  }
+
+  @media only screen and (min-width: 40.625em) {
+    flex-direction: row;
+
+    &__logo + &__logo {
+      margin-left: 4.5rem;
+    }
+  }
+}
+/* ||Download */
+.download {
+  text-align: center;
+  margin-bottom: 10.75rem;
+
+  @media only screen and (min-width: 40.625em) {
+    margin-bottom: 9.375rem;
+  }
+}
+
+/* ||footer  */
+.footer {
+  transition: all 0.5s ease-in;
+  text-align: center;
+  padding: 3.25rem 0;
+  background: $Footer-Bg;
+  &__logo {
+    margin-bottom: 3.0625rem;
+    & > img {
+      max-width: 3.5rem;
+    }
+  }
+
+  &__links {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__link {
+    margin-bottom: 3.0525rem;
+
+    & > a {
+      color: $Dark-Grayish-Blue;
+
+      &:hover {
+        color: $Strong-Cyan;
+      }
+    }
+  }
+  &__icon {
+    &:hover {
+      color: $Strong-Cyan;
+    }
+  }
+
+  &__icon + &__icon {
+    margin-left: 2rem;
+  }
+
+  @media only screen and (min-width: 40.625em) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__logo {
+      margin-bottom: unset;
+    }
+
+    &__links {
+      margin: 0;
+      text-align: left;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem 4.5rem;
+    }
+
+    &__link {
+      margin-bottom: 0;
+    }
+  }
+
+  @media only screen and (min-width: 53.125em) {
+    &__links {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+/* || Card   */
+
+.card {
+  text-align: center;
+  &__image {
+    margin-bottom: 2.875rem;
+  }
+  &__heading {
+    margin-bottom: 1.5rem;
+  }
+  &__text {
+    margin-bottom: 3.25rem;
+  }
+
+  /* || Card reset */
+
+  &--reset {
+    margin-left: 0;
+  }
+
+  @media only screen and (min-width: 40.625em) {
+    /* || modifier card--m */
+    &--m {
+      margin: 0 auto 5.3125rem auto;
+      max-width: 43.3125rem;
+    }
+
+    /* || modifier card--s */
+    &--s {
+      text-align: left;
+      max-width: 21.0625rem;
+    }
+  }
+  @media only screen and (min-width: 62.5em) {
+    /* || modifier card--s */
+
+    &--s {
+      margin-left: 6.875rem;
+    }
+
+    /* || card--reset */
+    &--reset {
+      margin-left: 2.75rem;
+    }
+  }
+}
