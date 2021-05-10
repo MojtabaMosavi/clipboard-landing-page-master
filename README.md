@@ -8,7 +8,6 @@ This is a solution to the [Project tracking intro component challenge on Fronten
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
   - [Built with](#built-with)
 
 
@@ -26,12 +25,6 @@ Users should be able to:
 
 ![](./design/desktop-design.jpg)
 
-
-
-
-### Links
-
-- Live Site URL: [https://clipboard-landing-page-master-green-ten.vercel.app/](https://your-live-site-url.com)
 
 
 ### Built with
